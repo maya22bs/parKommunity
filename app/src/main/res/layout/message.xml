@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingEnd="16dp"
+    android:orientation="horizontal"
+    android:background="?android:selectableItemBackground"
+    android:transitionGroup="false">
+    
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/group_icon"
+        android:visibility="invisible"
+        android:transitionName="@string/transition_avatar"/>
+
+    <!--         android:background="@drawable/avatar" -->
+
+    <!-- some skeleton approximating text -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:background="#bbb" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_below="@id/subtitle"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:background="#ccc" />
+
+    <Button
+        style="@android:style/Widget.Button"
+        android:id="@+id/buttonEnroll"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#c62828"
+        android:text="Join Group"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        />
+
+
+</RelativeLayout>
